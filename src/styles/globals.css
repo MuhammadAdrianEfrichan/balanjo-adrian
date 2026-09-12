@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme{
+    /* component font */
+    --font-inter : "Inter";
+    --font-roboto : "Roboto";
+
+    /* component warna */
+    --color-button : #A08336;
+    --color-background : #F9F9F9;
+    --color-linear : #1C1C28CC;
+    --color-text :#F5F5F5;
+    --color-abu : #8A898E;
+    --color-footer : #19161C;
+    --color-shadow : #15143966;
+    --color-line : #CDCDCD ;
+
+
+
+
+}
+@layer base {
+body {
+    background-color: var(--color-background);
+    font-family: var(--font-inter);
+}
+}

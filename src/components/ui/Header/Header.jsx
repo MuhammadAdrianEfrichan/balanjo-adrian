@@ -16,7 +16,7 @@ const Header = (props)=>{
         <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between sm:gap-8">
             <p className="w-full max-w-143.5 text-abu">{ket}
             </p>
-            <Link to={to} className="flex h-[45px] w-34.25 shrink-0 items-center justify-around rounded-xl bg-black px-3 py-2 text-white hover:text-abu">Lainnya <div className="text-[20px]">{'->'}</div></Link>
+            <Link to={to} className="flex h-11.25 w-34.25 shrink-0 items-center justify-around rounded-xl bg-black px-3 py-2 text-white hover:text-abu">Lainnya <div className="text-[20px]">{'->'}</div></Link>
         </div>
     </div>
     )

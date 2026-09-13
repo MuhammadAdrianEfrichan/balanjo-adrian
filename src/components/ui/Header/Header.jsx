@@ -10,13 +10,13 @@ const Header = (props)=>{
     // transparan HANYA kalau di halaman home DAN belum discroll
     const isHeader = isHeaderLike 
     return (
-        <div className={` ${isHeader ? "flex  h-36.5 flex-col gap-3 my-22.5" : "hidden"}`}>
-        <h2 className="text-[16px] font-medium mb-3">{category}</h2>
-        <h1 className="text-[35px] font-bold text-button">{label}</h1>
-        <div className="flex justify-between">
-            <p className="w-143.5 text-abu">{ket}
+        <div className={` ${isHeader ? "my-16 flex h-auto flex-col gap-3 sm:my-20 lg:my-22.5 lg:h-36.5" : "hidden"}`}>
+        <h2 className="mb-2 text-[16px] font-medium sm:mb-3">{category}</h2>
+        <h1 className="text-3xl font-bold leading-tight text-button sm:text-[35px]">{label}</h1>
+        <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between sm:gap-8">
+            <p className="w-full max-w-143.5 text-abu">{ket}
             </p>
-            <Link to={to} className="w-34.25 h-[45] flex justify-around items-center bg-black rounded-xl text-white px-3 py-2 hover:text-abu">Lainnya <div className="text-[20px]">{'->'}</div></Link>
+            <Link to={to} className="flex h-[45px] w-34.25 shrink-0 items-center justify-around rounded-xl bg-black px-3 py-2 text-white hover:text-abu">Lainnya <div className="text-[20px]">{'->'}</div></Link>
         </div>
     </div>
     )

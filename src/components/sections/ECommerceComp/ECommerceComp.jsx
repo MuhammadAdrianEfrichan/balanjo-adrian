@@ -75,15 +75,15 @@ const ECommerceComp = ({ limit })=>{
             Universitas Andalas pada banyak kategori"
             to='/E-Commerce'
         />
-    <section className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    <section className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4 lg:gap-6">
         {visibleProducts.map((item, index) => (
             <article className="overflow-hidden rounded-lg bg-white shadow-[0_2px_8px_rgba(0,0,0,0.08)]" key={`${item.id}-${index}`}>
                 <img src={item.photo} alt={item.label} className="aspect-281/223 w-full object-cover" />
-                <div className="flex min-h-45 flex-col items-center px-4 py-4 text-center">
-                    <h2 className="text-[16px] font-normal text-abu">{item.category}</h2>
-                    <h3 className="min-h-10.5 text-[18px] font-normal leading-tight">{item.label}</h3>
-                    <span className="mt-4 text-[20px] font-semibold">{item.quantity}</span>
-                    <Button onClick={() => navigate("/detail-product")} className="mt-4 h-11 w-full max-w-37.5 rounded-md text-[14px]">+ Keranjang</Button>
+                <div className="flex min-h-36 flex-col items-center px-2 py-3 text-center sm:min-h-45 sm:px-4 sm:py-4">
+                    <h2 className="text-xs font-normal text-abu sm:text-[16px]">{item.category}</h2>
+                    <h3 className="min-h-8 text-sm font-normal leading-tight sm:min-h-10.5 sm:text-[18px]">{item.label}</h3>
+                    <span className="mt-2 text-base font-semibold sm:mt-4 sm:text-[20px]">{item.quantity}</span>
+                    <Button onClick={() => navigate("/detail-product")} className="mt-2 h-9 w-full max-w-37.5 rounded-md text-[11px] sm:mt-4 sm:h-11 sm:text-[14px]">+ Keranjang</Button>
                 </div>
             </article>
         ))}

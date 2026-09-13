@@ -10,7 +10,7 @@ const UploadArtikel = () => {
         <Navbar />
             <Head>Upload Artikel</Head>
 
-            <main className="mx-auto mt-21 mb-16 w-full max-w-[1720px] rounded-lg bg-white px-12.25 py-9">
+            <main className="mx-4 mb-16 mt-12 w-auto rounded-lg bg-white px-5 py-7 sm:mx-8 sm:px-8 lg:mx-auto lg:mt-21 lg:max-w-[1720px] lg:px-12.25 lg:py-9">
                 <form className="flex flex-col gap-8">
                     <label className="flex flex-col gap-1 text-sm text-[#a6a6a6]">
                         Judul

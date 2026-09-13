@@ -35,7 +35,7 @@ const Slider = ()=>{
 
         return(
             <>
-        <div className="relative w-430 h-150 overflow-hidden rounded-2xl mt-55.75 mx-auto">
+        <div className="relative mx-0 mt-28 h-56 w-full overflow-hidden rounded-2xl sm:mt-40 sm:h-80 lg:mx-auto lg:mt-55.75 lg:h-150 lg:w-430">
             <img 
                 src={slides[currentIndex].image} 
                 alt={`slide-${currentIndex}`}
@@ -44,7 +44,7 @@ const Slider = ()=>{
 
             <button 
                 onClick={prevSlide}
-                className="absolute top-1/2 left-15 -translate-y-1/2 cursor-pointer"
+                className="absolute left-3 top-1/2 -translate-y-1/2 cursor-pointer sm:left-6 lg:left-15"
             >
                 <img src={kiri} alt="" />
             </button>
@@ -52,7 +52,7 @@ const Slider = ()=>{
             {/* tombol panah kanan */}
             <button 
                 onClick={nextSlide}
-                className="absolute top-1/2 right-15 -translate-y-1/2 cursor-pointer"
+                className="absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer sm:right-6 lg:right-15"
             >
                 <img src={kanan} alt="" />
             </button>
@@ -70,9 +70,9 @@ const Slider = ()=>{
                 ))}
             </div>
         </div>
-        <div className="flex gap-10 justify-center mt-10 mb-10">
-            <img src={bannerDua} alt="" className="w-210" />
-            <img src={bannerTiga} alt="" className="w-210"/>
+        <div className="mt-8 grid grid-cols-1 justify-center gap-6 pb-4 sm:grid-cols-2 lg:mt-10 lg:mb-10 lg:flex lg:gap-10">
+            <img src={bannerDua} alt="" className="w-full lg:w-210" />
+            <img src={bannerTiga} alt="" className="w-full lg:w-210"/>
         </div>
         </>
     )

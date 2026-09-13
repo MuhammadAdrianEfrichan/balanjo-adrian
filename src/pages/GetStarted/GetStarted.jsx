@@ -9,7 +9,7 @@ const GetStarted = ()=>{
     return <>
     
     <Navbar />
-    <div className="px-[97.32px]">
+    <div className="px-5 sm:px-8 lg:px-[97.32px]">
     <Slider />
     <ECommerceComp />
     <BlogComp />

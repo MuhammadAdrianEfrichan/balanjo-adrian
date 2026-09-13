@@ -35,12 +35,12 @@ const Menu = ()=>{
     }
 
     return (
-        <section className="mx-auto px-14.75 my-27.25 flex flex-col items-center gap-2">
+        <section className="mx-auto my-20 flex flex-col items-center gap-2 px-5 sm:px-8 lg:my-27.25 lg:px-14.75">
             <h3 className="text-[18px] text-abu font-medium">What we do</h3>
-            <h1 className="text-[52px] font-semibold mb-20">We've Got 3 Features!</h1>
-            <div className="grid grid-cols-3 gap-15">
+            <h1 className="mb-12 text-center text-4xl font-semibold sm:text-[52px] lg:mb-20">We've Got 3 Features!</h1>
+            <div className="grid w-full max-w-6xl grid-cols-1 gap-6 md:grid-cols-3 lg:gap-15">
                 {cart.map((item)=>{
-                    return <div className="flex flex-col justify-center items-center p-10 w-88 h-111 bg-white rounded-2xl gap-9 shadow-xl" key={item.id}>
+                    return <div className="flex min-h-96 flex-col items-center justify-center gap-9 rounded-2xl bg-white p-8 shadow-xl sm:p-10 lg:h-111 lg:w-88" key={item.id}>
                     <img src={item.icon} alt={item.label} />
                     <p className="text-center text-[18px] font-normal">{item.ket}</p>
                     <Button onClick={() => navigate(routes[item.label])} className="w-40.5 h-12.25">Selengkapnya</Button>

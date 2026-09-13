@@ -52,7 +52,7 @@ const posts = [
 ]
 
 const ForumComp = ()=>{
-    return <section className="pb-30 px-[97.32px]">
+    return <section className="px-5 pb-20 sm:px-8 lg:px-[97.32px] lg:pb-30">
         <Header
             category="Forum"
             label ="Mari Berdiskusi Dengan Para Rangers"

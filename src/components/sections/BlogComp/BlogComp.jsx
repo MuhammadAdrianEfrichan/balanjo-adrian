@@ -42,12 +42,12 @@ const BlogComp = ()=>{
             to='/blog'
         />
         
-        <div className="flex gap-20 items-center justify-center">
+        <div className="mx-auto grid w-full max-w-[1720px] grid-cols-1 justify-center gap-6 px-5 sm:grid-cols-2 sm:px-8 lg:flex lg:gap-20 lg:px-0">
             
         {carts.map((item)=>{
-            return <Link to="/detail-blog"><div className="w-120 h-140 bg-white shadow-xl px-3 py-4 rounded-xl" key={item.id}>
+            return <Link to="/detail-blog" key={item.id}><div className="h-auto min-h-96 w-full rounded-xl bg-white px-3 py-4 shadow-xl lg:h-140 lg:w-120">
             <img src={item.photo} alt="" className="mx-auto w-[90%]"/>
-                <div className="w-89 h-50 px-6 grid gap-4 mt-4">
+                <div className="mt-4 grid gap-4 px-4 sm:px-6 lg:h-50 lg:w-89">
                 <span className="text-md py-1 pl-2 text-button bg-amber-100 w-24.5 h-7 rounded-md">{item.category}</span>
                 <p className="text-[20px] font-semibold">{item.ket}</p>
                 <div className="flex flex-row gap-3.5 items-center text-abu">

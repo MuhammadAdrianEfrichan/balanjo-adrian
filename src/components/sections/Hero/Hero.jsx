@@ -8,17 +8,17 @@ const Hero = () => {
     const navigate = useNavigate();
     return (
         <section 
-            className="flex justify-center w-full h-213.5 bg-no-repeat"
+            className="flex min-h-[620px] w-full justify-center bg-no-repeat px-5 sm:min-h-[700px] lg:h-213.5 lg:px-0"
             style={{
                 backgroundImage: `url(${linearT}), url(${linearB}), url(${heroBg})`,
                 backgroundSize: "100% 100%, 100% 100%, cover",
                 backgroundPosition: "top, bottom, center",
             }}
         >
-            <div className="text-text flex flex-col justify-center items-center gap-5">
-                <h1 className="text-[84px] font-semibold">Inovasi untuk Rangers.</h1>
-                <h3 className="text-[20px] font-normal tracking-normal">Bersatu dalam Pengetahuan, Inspirasi, dan Karya</h3>
-                <Button className="w-42.25 h-13 mt-10"  onClick={() => navigate("/get-started")}>Get Started</Button>
+            <div className="flex flex-col items-center justify-center gap-5 text-center text-text">
+                <h1 className="text-4xl font-semibold sm:text-6xl lg:text-[84px]">Inovasi untuk Rangers.</h1>
+                <h3 className="text-base font-normal tracking-normal sm:text-[20px]">Bersatu dalam Pengetahuan, Inspirasi, dan Karya</h3>
+                <Button className="mt-10 h-13 w-42.25" onClick={() => navigate("/get-started")}>Get Started</Button>
             </div>
         </section>
     )

@@ -13,14 +13,16 @@ const Blog =()=>{
     <Navbar />
     <Head children="Blog" />
     <div className="mt-[64.17px]"></div>
-    <div className="flex w-430 gap-10 px-[97.32px] justify-between items-center py-15 mx-auto">
-        <Search className="w-250" placeholder="search for products..." />
-        <select className="w-73 px-2 h-14 shadow rounded-md bg-white">
+    <div className="mx-auto flex w-full flex-col items-stretch gap-4 px-5 py-10 sm:px-8 lg:w-430 lg:flex-row lg:items-center lg:justify-between lg:gap-10 lg:px-[97.32px] lg:py-15">
+        <Search className="w-full lg:w-250" placeholder="search for products..." />
+        <select className="h-14 w-full rounded bg-white px-2 shadow lg:w-73">
             <option value="">Filter Kategori</option>
         </select>
-        <Button className="w-73 h-14" onClick={() => navigate("/upload-artikel")}>Buat artikel baru</Button>
+        <Button className="h-14 w-full lg:w-73" onClick={() => navigate("/upload-artikel")}>Buat artikel baru</Button>
     </div>
-    <BlogComp />
+    <div className="pb-24 lg:pb-32">
+        <BlogComp />
+    </div>
     <Footer />
         </>
     )

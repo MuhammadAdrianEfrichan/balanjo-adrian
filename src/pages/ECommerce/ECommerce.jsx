@@ -41,7 +41,7 @@ const ECommerce = () => {
 
             <div className="mt-12 grid grid-cols-4 gap-3 rounded-lg bg-white px-4 py-4 sm:grid-cols-8 sm:gap-5 sm:px-8">
                 {categories.map(([icon, label]) => (
-                    <button className="flex min-w-0 flex-col items-center gap-1 text-[18px] cursor-pointer" key={label} type="button" onClick={() => navigate(`/detail-category?category=${encodeURIComponent(label)}`)}>
+                    <button className="flex min-w-0 cursor-pointer flex-col items-center gap-1 text-xs leading-tight sm:text-[18px] sm:leading-normal" key={label} type="button" onClick={() => navigate(`/detail-category?category=${encodeURIComponent(label)}`)}>
                         <span className="flex h-14 w-14 items-center justify-center rounded-md bg-button sm:h-20 sm:w-20">
                             <img className="h-9 w-9 sm:h-12 sm:w-12" src={icon} alt="" />
                         </span>

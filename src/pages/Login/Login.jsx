@@ -27,9 +27,8 @@ const Login = () => {
 						className="mt-2 h-18 w-full rounded-[10px] border border-[#c9c9c9] px-5 text-[16px] text-[#333] outline-none placeholder:text-[#999] focus:border-button"
 					/>
 
-					<div className="mt-10 flex items-center justify-between gap-4">
+					<div className="mt-10">
 						<label className="text-[16px] text-[#222]" htmlFor="password">Password</label>
-						<a className="text-[16px] text-[#42a5e9] hover:underline" href="#forgot-password">I forgot my password</a>
 					</div>
 					<input
 						id="password"
@@ -38,6 +37,9 @@ const Login = () => {
 						placeholder="your password"
 						className="mt-2 h-18 w-full rounded-[10px] border border-[#c9c9c9] px-5 text-[16px] text-[#333] outline-none placeholder:text-[#999] focus:border-button"
 					/>
+					<div className="mt-3 flex justify-end">
+						<a className="text-[16px] text-[#42a5e9] hover:underline" href="#forgot-password">I forgot my password</a>
+					</div>
 
 					<button className="mx-auto mt-10 h-18 w-37.25 rounded-[10px] bg-black text-[18px] font-semibold text-white transition-opacity hover:opacity-80" type="submit">
 						Sign in
